@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TGS Viewer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+<div class="brand">TGS Viewer</div>
+<button id="themeToggle" class="theme-btn" aria-label="Toggle Theme">Light Mode</button>
+</header>
+<main class="main">
+<section class="uploader">
+<div id="dropzone" class="dropzone">
+<div class="drop-instructions">Drop your .tgs here</div>
+<button id="chooseBtn" class="choose-btn">Choose .TGS or .JSON</button>
+<input id="fileInput" class="file-input" type="file" accept=".tgs,.json">
+<div id="status" class="status">Ready</div>
+</div>
+</section>
+<section class="player">
+<div id="animation" class="animation"></div>
+<div class="controls">
+<button id="playBtn" class="control-btn" aria-label="Play" disabled>Play</button>
+<button id="pauseBtn" class="control-btn" aria-label="Pause" disabled>Pause</button>
+<button id="restartBtn" class="control-btn" aria-label="Restart" disabled>Restart</button>
+<button id="downloadBtn" class="control-btn" aria-label="Download Lottie" disabled>Lottie</button>
+<div class="speed-group">
+<label for="speedSlider" class="speed-label">Speed</label>
+<input id="speedSlider" class="speed-slider" type="range" min="0.25" max="2" step="0.25" value="1" disabled>
+<span id="speedValue" class="speed-value">1.00×</span>
+</div>
+</div>
+</section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/pako@2.1.0/dist/pako.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lottie-web@5.12.2/build/player/lottie.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
