@@ -14,7 +14,7 @@ Single-page web app to drag & drop `.tgs` or `.json` Lottie files and play them 
 - Responsive layout with centered controls under the animation
 
 ## Getting Started 🛠️
-1. Clone the repository: 'git clone https://github.com/Th3ryks/TGSViewer.git'
+1. Clone the repository: `git clone https://github.com/Th3ryks/TGSViewer.git`
 2. Start any static server in the project root
    - macOS/Unix: `python3 -m http.server 8000`
 3. Open `http://localhost:8000/`
